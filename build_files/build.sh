@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 
-dbf5 remove -y app-dev.Lizardbyte.app.Sunshine
+dnf5 remove -y app-dev.Lizardbyte.app.Sunshine
 dnf5 remove -y fcitx5
 dnf5 remove -y input-remapper
 dnf5 remove -y kdebugsettings
