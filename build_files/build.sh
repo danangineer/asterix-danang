@@ -12,6 +12,10 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 
+dnf5 remove -y fcitx5
+dnf5 remove -y input-remapper
+dnf5 remove -y kdebugsettings
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -22,3 +26,4 @@ dnf5 install -y tmux
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl disable tailscaled.service
