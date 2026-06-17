@@ -15,7 +15,7 @@ dnf5 install -y mc
 dnf5 remove -y fcitx5
 dnf5 remove -y firefox
 dnf5 remove -y input-remapper
-dbf5 remove -y kbd-layout-viewer5
+dnf5 remove -y kbd-layout-viewer5
 dnf5 remove -y kcharselect
 dnf5 remove -y kde-connect
 dnf5 remove -y kdebugsettings
