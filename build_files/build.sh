@@ -15,6 +15,9 @@ dnf5 install -y tmux
 dnf5 remove -y fcitx5
 dnf5 remove -y input-remapper
 dnf5 remove -y kdebugsettings
+dnf5 remove -y kjournald
+dnf5 remove -y plasma-welcome
+dnf5 remove -y tecla
 
 # Use a COPR Example:
 #
