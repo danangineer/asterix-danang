@@ -17,7 +17,6 @@ dnf5 remove -y input-remapper
 dnf5 remove -y kdebugsettings
 dnf5 remove -y plasma-welcome
 
-flatpak install -y io.gitlab.librewolf-community
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
