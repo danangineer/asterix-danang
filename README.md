@@ -56,10 +56,4 @@ For additional driver support, ublue maintains a set of scripts and container im
 
 ## Community Examples
 
-These are images derived from this template (or similar enough to this template). Reference them when building your image!
-
-- [m2Giles' OS](https://github.com/m2giles/m2os)
-- [bOS](https://github.com/bsherman/bos)
-- [Homer](https://github.com/bketelsen/homer/)
-- [Amy OS](https://github.com/astrovm/amyos)
-- [VeneOS](https://github.com/Venefilyn/veneos)
+Feel free to use these builds and dots as you like. I do not, however, imply any form of support or ongoing maintenance. And of course, you use them entirely at your own risk. Have fun!
