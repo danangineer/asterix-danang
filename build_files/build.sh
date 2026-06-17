@@ -19,6 +19,7 @@ dnf5 remove -y kjournald
 dnf5 remove -y plasma-welcome
 dnf5 remove -y tecla
 
+flatpak install -y io.gitlab.librewolf-community
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
