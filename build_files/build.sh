@@ -12,7 +12,6 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 dnf5 install -y mc
-dnf5 install -y distrobox
 
 dnf5 remove -y fcitx5
 dnf5 remove -y input-remapper
