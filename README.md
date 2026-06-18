@@ -26,37 +26,33 @@ This should queue your image for the next reboot, which you can do immediately a
 
      Kinoite: `quay.io/fedora/fedora-kinoite:latest`
 
-You can find more Universal Blue images on the [packages page](https://github.com/orgs/ublue-os/packages).
-</details>
+You can find more Universal Blue images on the [packages page](https://github.com/orgs/ublue-os/packages). Fedora ones can be found here: https://quay.io/organization/fedora
 
-# Repository Contents
 
-## Containerfile
+## Repository Contents
+
+### Containerfile
 
 The [Containerfile](./Containerfile) defines the operations used to customize the selected image.This file is the entrypoint for your image build, and works exactly like a regular podman Containerfile. For reference, please see the [Podman Documentation](https://docs.podman.io/en/latest/Introduction.html).
 
-## build.sh
+### build.sh
 
 The [build.sh](./build_files/build.sh) file is called from your Containerfile. It is the best place to install new packages or make any other customization to your system. There are customization examples contained within it for your perusal.
 
-## build.yml
+### build.yml
 
 The [build.yml](./.github/workflows/build.yml) Github Actions workflow creates your custom OCI image and publishes it to the Github Container Registry (GHCR). By default, the image name will match the Github repository name. There are several environment variables at the start of the workflow which may be of interest to change.
 
-# Justfile Documentation
+### Justfile Documentation
 
 The `Justfile` contains various commands and configurations for building and managing container images and virtual machine images using Podman and other utilities.
 To use it, you must have installed [just](https://just.systems/man/en/introduction.html) from your package manager or manually. It is available by default on all Universal Blue images.
 
-## Environment Variables
+### Environment Variables
 
 - `image_name`: The name of the image (default: "image-template").
 - `default_tag`: The default tag for the image (default: "latest").
 - `bib_image`: The Bootc Image Builder (BIB) image (default: "quay.io/centos-bootc/bootc-image-builder:latest").
-
-## Additional resources
-
-For additional driver support, ublue maintains a set of scripts and container images available at [ublue-akmod](https://github.com/ublue-os/akmods). These images include the necessary scripts to install multiple kernel drivers within the container (Nvidia, OpenRazer, Framework...). The documentation provides guidance on how to properly integrate these drivers into your container image.
 
 -----------------------------
 
