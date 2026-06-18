@@ -1,4 +1,4 @@
-# Asterix-Danang
+## Asterix-Danang
 
 This repository is for my own custom [bootc](https://github.com/bootc-dev/bootc) image. It is an adjusted respin of Fedora Kinoite.
 
