@@ -17,7 +17,6 @@ dnf5 install -y nix
 dnf5 remove -y drkonqi-coredump-gui
 dnf5 remove -y fcitx5
 dnf5 remove -y firefox
-dnf5 remove -y kbd
 dnf5 remove -y kcharselect
 dnf5 remove -y kde-connect
 dnf5 remove -y kdebugsettings
