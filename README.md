@@ -2,7 +2,9 @@
 
 This repository is for my own custom [bootc](https://github.com/bootc-dev/bootc) image. It is an adjusted respin of Fedora Kinoite.
 
-This KDE has a bare minimum of included applications, no Discover (install the flatpak of Bazaar) and includes Distrobox.
+To build this image I chose Kinoite (quay.io/fedora/fedora-kinoite:latest). I did tests with both Aurora and ublue-kinoite, but I found those a bit too much.
+
+My KDE has a bare minimum of included applications, no Discover and includes Distrobox.  As an appstore you can install the flatpak of Bazaar.
 
 For all our CLI applications you'll have to install Homebrew (https://brew.sh) with the following command:
 
@@ -21,13 +23,6 @@ From the terminal in your bootc system, run the following command:
     sudo bootc switch ghcr.io/danangineer/asterix-danang
 
 This should queue your image for the next reboot, which you can do immediately after the command finishes. You have officially set up your custom image! 
-
-### Chosen Base Image
-
-     Kinoite: `quay.io/fedora/fedora-kinoite:latest`
-
-You can find more Universal Blue images on the [packages page](https://github.com/orgs/ublue-os/packages). Fedora ones can be found here: https://quay.io/organization/fedora
-
 
 ## Repository Contents
 
