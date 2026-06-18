@@ -10,7 +10,7 @@ This repository is for my own custom [bootc](https://github.com/bootc-dev/bootc)
 
 From the terminal in your bootc system, run the following command:
 ```bash
-sudo bootc switch ghcr.io/<username>/asterix-danang
+sudo bootc switch ghcr.io/danangineer/asterix-danang
 ```
 This should queue your image for the next reboot, which you can do immediately after the command finishes. You have officially set up your custom image! See the following section for an explanation of the important parts of the template for customization.
 
