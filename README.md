@@ -1,6 +1,6 @@
 # Asterix-Danang
 
-This repository is for my own custom [bootc](https://github.com/bootc-dev/bootc) image. It is an adjusted respin of Aurora KDE.
+This repository is for my own custom [bootc](https://github.com/bootc-dev/bootc) image. It is an adjusted respin of Fedora Kinoite.
 # Community
 
 If you have questions about this template after following the instructions, try the following spaces:
@@ -11,7 +11,7 @@ If you have questions about this template after following the instructions, try 
 ### Step 2b: Chosen Base Image
 
 
-- Aurora: `ghcr.io/ublue-os/aurora:latest`
+- Kinoite: `quay.io/fedora/fedora-kinoite:latest`
 
 You can find more Universal Blue images on the [packages page](https://github.com/orgs/ublue-os/packages).
 </details>
