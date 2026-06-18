@@ -2,21 +2,29 @@
 
 This repository is for my own custom [bootc](https://github.com/bootc-dev/bootc) image. It is an adjusted respin of Fedora Kinoite.
 
-### Step 1: Choose a Fedora Atomic imageand install it
+This KDE has a bare minimum of included applications, no Discover (install the flatpak of Bazaar) and includes Distrobox.
 
-- Doesn't matter which one you pick, you'll rebase anyway
+For all our CLI applications you'll have to install Homebrew (https://brew.sh) with the following command:
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+The likes of htop, fastfetch, yazi etc etc are available to you. Or by creating a distrobox of course.
+
+### Step 1: Choose a Fedora Atomic image and install it
+
+    Doesn't matter which one you pick, you'll rebase anyway (Kinoite, Silverblue, Cosmic)
 
 ### Step 2: Switch to Asterix
 
 From the terminal in your bootc system, run the following command:
-```bash
-sudo bootc switch ghcr.io/danangineer/asterix-danang
-```
-This should queue your image for the next reboot, which you can do immediately after the command finishes. You have officially set up your custom image! See the following section for an explanation of the important parts of the template for customization.
+
+    sudo bootc switch ghcr.io/danangineer/asterix-danang
+
+This should queue your image for the next reboot, which you can do immediately after the command finishes. You have officially set up your custom image! 
 
 ### Chosen Base Image
 
-- Kinoite: `quay.io/fedora/fedora-kinoite:latest`
+     Kinoite: `quay.io/fedora/fedora-kinoite:latest`
 
 You can find more Universal Blue images on the [packages page](https://github.com/orgs/ublue-os/packages).
 </details>
