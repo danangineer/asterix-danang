@@ -10,22 +10,21 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y fastfetch
-dnf5 install -y mc
-dnf5 install -y nix-core
+dnf5 install -y distrobox
+dnf5 install -y gwenview
+dnf5 install -y okular
 
-dnf5 remove -y drkonqi-coredump-gui
-dnf5 remove -y fcitx5
+dnf5 remove -y filelight
 dnf5 remove -y firefox
 dnf5 remove -y kcharselect
+dnf5 remove -y kfind
+dnf5 remove -y khelpcenter
 dnf5 remove -y kde-connect
 dnf5 remove -y kdebugsettings
 dnf5 remove -y kjournald
 dnf5 remove -y krfb
-dnf5 remove -y ktnef
 dnf5 remove -y nvtop
 dnf5 remove -y plasma-discover
-dnf5 remove -y plasma-emojier
 dnf5 remove -y plasma-welcome
 
 # Use a COPR Example:
