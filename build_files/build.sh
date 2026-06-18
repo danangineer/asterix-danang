@@ -34,4 +34,4 @@ dnf5 remove -y plasma-welcome
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl disable tailscaled.service
+
