@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y fastfetch
 dnf5 install -y mc
-dnf5 install -y nix
+dnf5 install -y nix-core
 
 dnf5 remove -y drkonqi-coredump-gui
 dnf5 remove -y fcitx5
@@ -38,5 +38,5 @@ dnf5 remove -y plasma-welcome
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl enable nix-daemon
+
 
