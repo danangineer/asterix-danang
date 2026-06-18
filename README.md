@@ -1,29 +1,25 @@
 # Asterix-Danang
 
 This repository is for my own custom [bootc](https://github.com/bootc-dev/bootc) image. It is an adjusted respin of Fedora Kinoite.
-# Community
 
-If you have questions about this template after following the instructions, try the following spaces:
-- [Universal Blue Forums](https://universal-blue.discourse.group/)
-- [Universal Blue Discord](https://discord.gg/WEu6BdFEtp)
-- [bootc discussion forums](https://github.com/bootc-dev/bootc/discussions) - This is not an Universal Blue managed space, but is an excellent resource if you run into issues with building bootc images.
+### Step 1: Choose a Fedora Atomic imageand install it
 
-### Step 2b: Chosen Base Image
+- Doesn't matter which one you pick, you'll rebase anyway
 
+### Step 2: Switch to Asterix
+
+From the terminal in your bootc system, run the following command:
+```bash
+sudo bootc switch ghcr.io/<username>/asterix-danang
+```
+This should queue your image for the next reboot, which you can do immediately after the command finishes. You have officially set up your custom image! See the following section for an explanation of the important parts of the template for customization.
+
+### Chosen Base Image
 
 - Kinoite: `quay.io/fedora/fedora-kinoite:latest`
 
 You can find more Universal Blue images on the [packages page](https://github.com/orgs/ublue-os/packages).
 </details>
-
-
-## Step 3: Switch to Your Image
-
-From your bootc system, run the following command substituting in your Github username and image name where noted.
-```bash
-sudo bootc switch ghcr.io/<username>/asterix-danang
-```
-This should queue your image for the next reboot, which you can do immediately after the command finishes. You have officially set up your custom image! See the following section for an explanation of the important parts of the template for customization.
 
 # Repository Contents
 
@@ -54,6 +50,6 @@ To use it, you must have installed [just](https://just.systems/man/en/introducti
 
 For additional driver support, ublue maintains a set of scripts and container images available at [ublue-akmod](https://github.com/ublue-os/akmods). These images include the necessary scripts to install multiple kernel drivers within the container (Nvidia, OpenRazer, Framework...). The documentation provides guidance on how to properly integrate these drivers into your container image.
 
-## Community Examples
+-----------------------------
 
 Feel free to use these builds and dots as you like. I do not, however, imply any form of support or ongoing maintenance. And of course, you use them entirely at your own risk. Have fun!
