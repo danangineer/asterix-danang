@@ -12,6 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y distrobox
 dnf5 install -y gwenview
+dnf5 install -y krusader
 dnf5 install -y okular
 
 dnf5 remove -y filelight
