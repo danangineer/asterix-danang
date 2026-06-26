@@ -8,7 +8,7 @@ My KDE has a bare minimum of included applications, no Discover and includes Dis
 
 ### Step 1: Choose a Fedora Atomic image and install it
 
-    Doesn't matter which one you pick, you'll rebase anyway (Kinoite, Silverblue, Cosmic)
+Doesn't matter which one you pick, you'll rebase anyway (Kinoite, Silverblue, Cosmic)
 
 ### Step 2: Switch to Asterix
 
