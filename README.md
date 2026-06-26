@@ -24,7 +24,7 @@ Unfortunately some unnecessary cruft is installed, as flatpak, upon install of t
 
 From the terminal run the following:
 
-    flatpak remove -y eleisa gwenview kcalc kmahjongg kmines kolourpaint krdc okular qrca skanpage
+    flatpak remove -y elisa gwenview kcalc kmahjongg kmines kolourpaint krdc okular qrca skanpage
 
 Because I removed Discover the 'link' to Flathub is broken also; let's re-enable it:
 
