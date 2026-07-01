@@ -10,10 +10,10 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
+dnf5 install -y @kde-desktop-environment
 dnf5 install -y distrobox
-dnf5 install -y gwenview
+dnf5 install -y fastfetch
 dnf5 install -y krusader
-dnf5 install -y okular
 
 dnf5 remove -y filelight
 dnf5 remove -y firefox
@@ -28,12 +28,9 @@ dnf5 remove -y nvtop
 dnf5 remove -y plasma-discover
 dnf5 remove -y plasma-welcome
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+# Add Flathub by default
+mkdir -p /etc/flatpak/remotes.d
+curl --retry 3 -o /etc/flatpak/remotes.d/flathub.flatpakrepo "https://dl.flathub.org/repo/flathub.flatpakrepo"
 
 #### Example for enabling a System Unit File
 
