@@ -24,6 +24,9 @@ dnf5 remove -y kde-connect
 dnf5 remove -y kdebugsettings
 dnf5 remove -y kjournald
 dnf5 remove -y krfb
+dnf5 remove -y libreoffice-calc
+dnf5 remove -y libreoffice-impress
+dnf5 remove -y libreoffice-writer
 dnf5 remove -y nvtop
 dnf5 remove -y plasma-discover
 dnf5 remove -y plasma-welcome
